@@ -1,0 +1,5 @@
+Que es virtual DOM primero tenemos que saber que es el DOM.
+
+El DOM es esencialmente un modelo representación gráfica del documento que se muestra en la aplicacion web creado por el navegador sobre el cual este aplica los cambios necesarios en cada actulizacion de estado o evento.
+
+Supongamos por lo menos twitter nosotros cuando vamos bajando se van a cargar nuevos twitt en algun momento lo que sucede hay es que se actuliza el DOM.

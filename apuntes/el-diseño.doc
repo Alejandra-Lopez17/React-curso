@@ -1,0 +1,73 @@
+El diseño que va a tener mi proyecto es la siguiente.
+
+- Select picker --->  en el que podemos hacer clik y elegir lo que queramos para trabajar en el.
+
+- Input text ---> Caja de texto que cuando escribimos va aparecer un texto arriba de todo en la primera parte de lo que hayamos puesto.
+
+- Input text ---> Vamos a colocar otra caja de texto.
+
+- Boton exportar ---> Esto es para exportar una imagen en algo de jpg o png.
+
+
+# SELECT PICKER 
+
+value"nombre de la imagen"
+
+<select>
+  <option value="">Mi blog</option>
+  <option value="Desarrollo web">Desarrollo Web</option>
+  <option value="Html">HTML</option>
+  <option value="Css">CSS</option>
+  <option value="Javascript">JavaScript</option>
+</select>
+
+
+# lA CAJA DE TEXTO INPUT TEXT, RECUERDA QUE SON 2 O LOS QUE VAYAS A COLOCAR.
+para decir que especie de texto que diga que es cada linea vamos a colocar placeholder.
+
+<input type="text" placeholder="Linea 1"/> <br />
+<input type="text" placeholder="Linea 2"/> <br/>
+
+
+# El boton exportar
+<button>Exportar</button>
+
+# Vamos a tener la esctructura de proyecto
+dentro vamos a tener un texto "span"
+
+  <span>Linea 1</span>
+  <span>Linea 2</span>
+  <img src="" />
+
+
+Entonces para poder modificar la linea debemos crear los estados de React un estado es basicamente donde vamos a almacenar una variable y tambien va a tener una funcionalidad para cambiar esa variable.
+
+La variable que estamos creando se llama "linea1"
+
+Y creamos una funcion que se llama "setLinea1" que permite modificar el valor de la variable.
+
+Si le coloco un string useState(aleja); va tener poder defecto la variable linea1 este valor por defecto.
+
+# Creando una constante
+  const [linea1, setLinea1] = useState('');
+
+# Podemos crear variables con la palabra let y le podemos asignar valor tambien se puede utilizar la palabra var pero se recomienda utilizar let. 
+
+# Y la constante es un valor que no cambia, una variable que no se puede modificar.
+
+# Y la funcion de React de useState lo que esta haciendo es devolver un array que tiene 2 valores
+El primer valor lo va poner en linea1 y el segundo valor lo va poner en setLinea1
+
+Linea 1 va hacer una variable.
+Y setLinea1 va hacer una funcion que me permite modificar el valor de esta variable.
+
+
+Onchange esto lo que puede recibir es una funcion
+
+#Esto es un evento
+  const onChangeLinea1 = function(valor) 
+    alert(valor)
+
+
+Bueno vamos a poner una imagen cuando selecionamos el select picker.
+

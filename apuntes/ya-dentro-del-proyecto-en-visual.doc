@@ -1,0 +1,32 @@
+En la esctructura del proyecto tenemos la carpeta
+      Sur ---> Que es donde va estar todo nuestro codigo.
+
+Y por fuera vamos a tener algunos archivos de coniguración 
+    Ejemplo: (gitgnore) (Readme.md) (package.json,) (package-lock.json)
+
+    gitgnore ---> Basicamente lo que dice es archivos que tienen que ignorar git y git como sabemos es un repositorio de código en donde podemos subir nuestros proyectos.
+    Bueno en la carpeta /node_modules bueno estamos ignorando todos los archivos que estan en esta carpeta, ya que en esta carpeta es donde se guardan todas esas librerías externas que pueden ser muchísimas y termina siendo muy pesado entonces esta carpeta no se va subir al repositorio de git.
+
+
+    Despues tenemos otro archivo que es propiedad de git que es "Readme.md"
+
+
+    Despues tenemos el archivo "package.json" que basicamente aca vamos a ver la configuración principal del proyecto
+    como puede ser el nombre del proyecto, la version, y las dependencias que va a tener 
+
+      "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+
+  En estas dependencias hacemos referencia a esas librerías que tienen que descargar por defecto se nos pone algunas de react, y tambien algunas de testing.
+
+Despues tenemos mas coniguraciónes pero la verdad esta la vamos a ver un poco más adelante.
+
+
+    Despues tenemos el archivo "package-lock.json" es un archivo que se genera automaticamente cuando se compila el proyecto y sirve para el control de las versiones.

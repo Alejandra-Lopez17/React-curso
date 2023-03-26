@@ -1,0 +1,85 @@
+Hola mundo en React/ En este caso voy a colocar mi proyecto, mi blog.
+-Para levantar servicio recuerda poner el nombre de tu proyecto en este caso (cd mi_blog)
+-Para levantar servicio (npm run start)
+
+
+// Funcion App() {}
+// eslint-disable-next-line no-lone-blocks
+{
+  /*(function App()  ) La parte de Javascript funcion la funcion puede tener el nombre que nosotros queramos, pero normalmente se pone el nombre del mismo archivo. Estamos en el App entonces el nombre de la funcion es App. Y esta funcion lo unico que esta haciendo es retornar este codigo html */
+}
+
+
+// return ( );
+// eslint-disable-next-line no-lone-blocks
+{
+  /* return Como vemos aqui abre unos parentesis y despues lo cierra abajo. */
+}
+
+// Antes del return en function App() podriamos escribir todo el codigo JavaScript para la logica que nosotros queramos.
+// eslint-disable-next-line no-lone-blocks
+{
+  /* 
+Puede ser por ejemplo una variable que diga nombre
+  var nombre = "Alejandra";  (alejandra es un String)
+  Hola Mundo soy {nombre}
+
+  Podriamos crear otra variable que diga saludo
+  
+*/
+}
+
+      {/*En este HTML hay una palabra que dice className, en HTML para referirnos a algo de CSS a una clase de CSS, escribiamos class. sin embargo aca no se puede en vez de class vamos a escribir className.*/}
+
+            {/* Recuerda colocar la barra al final en el salto de linea en el caso de jsx <br /> */}
+
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App"> {/*En este HTML hay una palabra que dice className, en HTML para referirnos a algo de CSS a una clase de CSS, escribiamos class. sin embargo aca no se puede en vez de class vamos a escribir className.*/}
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+        Hola Mundo <br />  {/* Recuerda colocar la barra al final en el salto de linea en el caso de jsx <br /> */}
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+//App vendria hacer un componente de React y este componente lo estamos llamando desde el archivo "index.js"
+
+//index.js ---> Este archivo es donde se inicializa React. y pone una funcion llamada ReactDOM. despues llama ala funcion "render"
+// Y despues le pasamos el componente por defecto que es <React.StrictMode>
+    <App />
+  </React.StrictMode>
+
+  // Esto por lo general no se modifica nunca siempre se mantiene igual.
+
+
+//Lo unico interesante de index.js document.getElementById('root')
+
+// Si vamos ala carpeta public --> En index.html vamos a encontrar que hay un div que dice root entonces lo que esta haciedo react es encontrar este div y aca es donde va poner toda la logica de react y la verdad este archivo html no se suele modificar demasiado ya que toda la web se va a cargar por el virtual dom que genera react entonces no es que vamos a estar escribiendo codigo HTML en este lugar se deja asi como esta por defecto.
+
+En esta carpeta ademas de tener index.html justamente tenemos estos archivos que son de indole publico como puede ser:
+public
+- favicon.ico ---> Vendria hacer el icono de arriba de la pagina web.
+- tambien tenemos el logo.
+- robots.txt ---> Estos sirve para la idexación de robots de google.
+

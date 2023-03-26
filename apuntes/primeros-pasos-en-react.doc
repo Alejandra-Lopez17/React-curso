@@ -1,0 +1,67 @@
+1- Download Nodejs.
+ Node.js Es para levantar un servidor local, para probar nuestras aplicación de React. Pero no significa que React funciona solo con Node.js Podriamos tener una página de React ya sea que en el Backen este hecho en Java en Php o en lo que sea simplemente lo vamos a utilizar para trabajar localmente nada más. Se instala LTS que es la más estable.
+    (https://nodejs.org/en/download)
+
+
+2- Abrir la consola de nuestro sistema operativo en este caso CMD.
+- Lo primero que tenemos que hacer es actulizar NPM basicamente npm es un gestor de librerías de Nodejs que nos sirve para bajar las distintas dependecias y librerías que vayamos a utilizar en nuestro proyecto. con esto de @ latest le estamos indicando que nos descargue la ultima versión.
+    (npm install -g npm@latest)
+
+
+3- Vamos a mirar que version tenemos instalada.
+    (npm --version)
+
+
+4- El siguiente paso es eliminar la cache para descargar las librerías lo más actulizado posible. #clean significa limpiar.
+    (npm cache clean --force)
+
+
+5- El siguiente paquete que vamos a instalar es create-react-app basicamente son unos paquetes de React que nos permiten el trabajo mucho más simple. 
+(https://es.reactjs.org/docs/create-a-new-react-app.html) -> Página Web para mirar algunas funcionalidades que hace.
+
+Para instalar este paquete primero voy a limpiar la consola.
+    (cls) ---> Limpiar, la consola.
+    (npm install -g create-react-app) ---> Nos permiten el trabajo mucho más simple.
+
+
+6- Una vez instalado debemos crear el proyecto de React.
+Si deseo entrar al escritorio escribo (cd Desktop)
+
+    ---> Podemos hacer lo siguiente en caso de que el comando "cd Desktop" no funcione, copiar la ruta de la carpeta que queremos alojar el proyecto, pero debe quedar en el escritorio de igual forma. 
+    
+-En este caso un ejemplo de la ruta (cd C:\blog) recuerda siempre poner "cd".
+-Ya parados en la carpeta (create-react-app mi_blog)
+-Y al final debe decir (Happy hacking!)
+- Despues haremos el comando (code .) ---> Que habre visual estudio con el proyecto que creamos.
+
+
+    (cd Desktop) -> Para pararme en el escritorio.
+    (create-react-app nombre del proyecto. ---> ejemplo: "cursoreact") ---> Para crear el proyecto.
+
+Si se presenta este error ejemplo: nombre del proyecto esta así (CursoReact) esto se conoce como "capital case". tenemos que ponerlo en miniscula de esta forma (cursoreact)
+
+
+7- Comandos para el proyecto.
+    (npm start) vamos a poder levantar un servidor de "Nodejs" y probar lo que estamos programando.
+
+    (npm run build) Basicamente lo que hace este comando es generar el codigo html javaScript y css final que vamos a utilizar en nuestro proyecto en producción.
+
+
+8- Algunos comandos para comenzar a trabajar.
+    cd nombre del proyecto en mi caso seria  (cd mi_blog)
+
+    npm start ---> Para levantar el servidor y poder ver lo que estamos haciendo.
+
+
+9- Vamos a levantar servicio
+    cd mi_blog
+    npm start 
+
+http://localhost:3000  ---> Esto es uso local.
+
+
+http://192.168.56.1:3000 ---> Esto es para poder entrar desde la red local. para comprobar si esta bien abrimos otra terminal y vamos a escribir "ipconfig" la que necesitamos es la que dice "Adaptador de LAN inalámbrica Wi-Fi: Dirección IPv4. . . . . . . . . . . . . . : 192.168.0.105" Esta es la direccion que debemos utilizar si quisieramos entrar desde el celular. recuerda colocar de la siguiente manera 192.168.0.105:3000  El :3000 para que pueda Abrir.
+
+
+10- Si queremos frenar el sevidor presionamos (Ctrl + la letra c)
+    ctrl + c ---> Y aparece (S/N) "S es para decir que SI" y "N es para decir que NO."
